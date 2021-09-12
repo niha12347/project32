@@ -55,8 +55,9 @@ async function getBackgroundImg(){
     var datetime = responseJSON.datetime;
 
     // slice the datetime to extract hour
-    
-    var responseJSON = await response.json();
+    var hour = datetime.slice(11,13);
+
+   
     
     if(hour>=0 && hour<18 ){
         bg = "sunrise.png";
